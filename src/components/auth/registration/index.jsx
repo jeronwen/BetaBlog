@@ -41,7 +41,7 @@ export const RegistrationModal = ({ open, handleClose }) => {
         JSON.stringify(data),
         { headers: { "Content-Type": "application/json" } }
       );
-      await console.log(req);
+      handleClose();
       alert("Вы успешно зарегистрированы!");
     } catch (error) {
       alert("Произошла ошибка");
